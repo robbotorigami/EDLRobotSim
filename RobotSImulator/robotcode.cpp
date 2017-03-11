@@ -27,8 +27,8 @@ size_t pathlength = 0;
 
 enum stage_t{
 	STAGE1, //Go from first square to second
-	STAGE2, //Rotate 
-	STAGE3,
+	STAGE2, //Rotate 360
+	STAGE3, //Go from second square to first
 	STAGE4,
 }stage;
 
