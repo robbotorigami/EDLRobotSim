@@ -5,13 +5,16 @@ public:
 	Simulation();
 	void setState(double xpos, double ypos, double theta);
 	void getState(double *xpos, double *ypos, double *theta);
-	void setStateDeriv(double xDot, double yDot, double thetaDot);
+	void setLeftMotor(double leftMotor);
+	void setRightMotor(double rightMotor);
+	void getEncoderDeltas(double* enc1, double* enc2);
 	void propagate(double timestep);
 private:
 	double time;
+	double lmspeed, rmspeed;
+	double encoderStep1, encoderStep2;
 	double xpos, ypos, theta;
-	double xDot, yDot, thetaDot;
 };
 extern Simulation mainSim;
-void commandMotion(float speed, float rotationRate);
-void getdeltapos(float* xdelt, float* ydelt, float* thetadelt);
+extern const float RADIUS1;
+extern const float RADIUS2;

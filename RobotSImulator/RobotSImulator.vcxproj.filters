@@ -21,21 +21,21 @@
     <ClCompile Include="robotcode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dubins.cpp">
+    <ClCompile Include="simulationmethods.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="simulationmethods.cpp">
+    <ClCompile Include="RobotSketch\dubins.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dubins.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="robotcode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="simulationmethods.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RobotSketch\dubins.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

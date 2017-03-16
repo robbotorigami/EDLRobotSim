@@ -32,8 +32,8 @@ with open('robotsmodel.csv', 'rb') as csvfile:
         
 plt.figure()
 plt.plot(xvaluesd, yvaluesd)
-#plt.plot(xvaluesrm, yvaluesrm, 'black', linewidth = 8.0)
-#plt.plot(xvaluesr, yvaluesr,'red', linewidth = 1.0)
+plt.plot(xvaluesrm, yvaluesrm, 'black', linewidth = 8.0)
+plt.plot(xvaluesr, yvaluesr,'red', linewidth = 1.0)
 plt.grid(True)
 
 plt.axes().set_aspect('equal', 'datalim')

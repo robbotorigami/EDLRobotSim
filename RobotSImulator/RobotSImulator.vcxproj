@@ -113,14 +113,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dubins.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="robotcode.cpp" />
+    <ClCompile Include="RobotSketch\dubins.cpp" />
     <ClCompile Include="simulationmethods.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dubins.h" />
     <ClInclude Include="robotcode.h" />
+    <ClInclude Include="RobotSketch\dubins.h" />
     <ClInclude Include="simulationmethods.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
