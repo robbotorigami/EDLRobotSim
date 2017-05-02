@@ -12,7 +12,7 @@ Simulation::Simulation()
 	:xpos(0),ypos(0),theta(0),time(0),
 	rmspeed(0),lmspeed(0),encoderStep1(0),encoderStep2(0)
 {
-	srand(12341234);
+	srand(1234434);
 }
 
 void Simulation::setState(double xpos, double ypos, double theta){

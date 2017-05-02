@@ -26,11 +26,11 @@ void generatePath(double q1[3], double q2[3]) {
   pathlength = 0;
 
   DEBUG("\nCalculating Dubins path");
-  dubins_path_sample_many(&path, addNodeToPath, 0.1, NULL); 
+  dubins_path_sample_many(&path, addNodeToPath, 0.03, NULL); 
 
   addNodeToPath(q2, 0, NULL);
-  ::path[pathlength][0] = q1[0] + 1 * cos(q1[2]);
-  ::path[pathlength][1] = q1[0] + 1 * sin(q1[2]);
+  ::path[pathlength][0] = q1[0] + 0.03 * cos(q1[2]);
+  ::path[pathlength][1] = q1[1] + 0.03 * sin(q1[2]);
   PRINT("(path length: %d)", pathlength);
   DEBUG("done\n");
 }

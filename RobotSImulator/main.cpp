@@ -9,7 +9,7 @@
 #include "simulationmethods.h"
 
 #define TIMESTEP 0.001 //[s]
-#define SIMLENGTH 50.0 //[s]
+#define SIMLENGTH 40.0 //[s]
 #define LOOP_PERIOD 0.20 //[s]
 
 struct simState {
