@@ -20,7 +20,7 @@ ofstream modelpathfile;
 #else
 #define DEBUG(string) Serial.print(string)
 #define PRINT(...) 
-#define APRINT(...) softSer.print(__VA_ARGS__)
+#define APRINT(...) Serial.print(__VA_ARGS__)
 #endif
 
 //-------------Control Parameters-----------

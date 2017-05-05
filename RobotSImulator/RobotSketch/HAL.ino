@@ -115,9 +115,9 @@ void commandRightWheel(float cmdSpeed){
       analogWrite(pinSpeed_Right, 0);
       return;
   }
-  if(cmdSpeed > prev_right + (LIM_CMD_R /4.0)) cmdSpeed = prev_right + (LIM_CMD_R/4.0);
-  if(cmdSpeed < prev_right - (LIM_CMD_R /4.0)) cmdSpeed = prev_right - (LIM_CMD_R/4.0);
-  prev_right = cmdSpeed;
+//  if(cmdSpeed > prev_right + (LIM_CMD_R /4.0)) cmdSpeed = prev_right + (LIM_CMD_R/4.0);
+//  if(cmdSpeed < prev_right - (LIM_CMD_R /4.0)) cmdSpeed = prev_right - (LIM_CMD_R/4.0);
+//  prev_right = cmdSpeed;
   if(cmdSpeed > 0){ // move right wheel cw
       digitalWrite(pinCC_Right, HIGH);
       digitalWrite(pinCW_Right, LOW);
@@ -161,9 +161,9 @@ void commandLeftWheel(float cmdSpeed){
       analogWrite(pinSpeed_Left, 0);
       return;
   }
-  if(cmdSpeed > prev_left + (LIM_CMD_L /4.0)) cmdSpeed = prev_left + (LIM_CMD_L/4.0);
-  if(cmdSpeed < prev_left - (LIM_CMD_L /4.0)) cmdSpeed = prev_left - (LIM_CMD_L/4.0);
-  prev_left = cmdSpeed;
+//  if(cmdSpeed > prev_left + (LIM_CMD_L /4.0)) cmdSpeed = prev_left + (LIM_CMD_L/4.0);
+//  if(cmdSpeed < prev_left - (LIM_CMD_L /4.0)) cmdSpeed = prev_left - (LIM_CMD_L/4.0);
+//  prev_left = cmdSpeed;
   if(cmdSpeed > 0){ // move right wheel cw
       digitalWrite(pinCC_Left, HIGH);
       digitalWrite(pinCW_Left, LOW);
